@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane fx:id="HardwareManageContext" prefHeight="601.0" prefWidth="1004.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.HardwareManageFormController">
+   <children>
+      <Label layoutX="285.0" layoutY="14.0" text="HARDWARE MANAGE FORM">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Separator layoutX="270.0" layoutY="48.0" prefHeight="5.0" prefWidth="371.0" />
+      <JFXTextField fx:id="txtItemID" layoutX="44.0" layoutY="87.0" onAction="#SearchItemIDOnAction" prefHeight="25.0" prefWidth="135.0" promptText="Item_ID" />
+      <JFXTextField fx:id="txtItemQty" layoutX="539.0" layoutY="87.0" prefHeight="25.0" prefWidth="135.0" promptText="Item_Qty" />
+      <JFXTextField fx:id="txtItemPrice" layoutX="44.0" layoutY="139.0" prefHeight="25.0" prefWidth="135.0" promptText="Item_Price" />
+      <Button fx:id="btnNewHardware" layoutX="625.0" layoutY="175.0" mnemonicParsing="false" onAction="#NewHardwareOnAction" prefHeight="39.0" prefWidth="166.0" style="-fx-background-radius: 15px; -fx-background-color: green;" text="+NEW HARDWARE" textFill="#f2f2f2">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnAddHardware" layoutX="817.0" layoutY="175.0" mnemonicParsing="false" onAction="#AddHardwareOnAction" prefHeight="39.0" prefWidth="173.0" style="-fx-background-radius: 15px; -fx-background-color: blue;" text="ADD HARDWARE" textFill="#f2f2f2">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="95.0" fitWidth="135.0" layoutX="852.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assects/294263053_633637384764386_3621494553977017905_n.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="42.0" fitWidth="44.0" layoutX="23.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assects/menu_FILL0_wght400_GRAD0_opsz48.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnBackToMenu" layoutX="780.0" layoutY="12.0" mnemonicParsing="false" onAction="#BackToMenuOnAction" prefHeight="39.0" prefWidth="210.0" style="-fx-background-radius: 15px;" text="ADMIN DASHBOARD" textFill="#214abc">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <JFXTextField fx:id="txtItemDesc" layoutX="376.0" layoutY="139.0" prefHeight="25.0" prefWidth="135.0" promptText="Item_Desc" />
+      <JFXComboBox fx:id="comCusID" layoutX="202.0" layoutY="87.0" onAction="#ComCusIDOnAction" prefHeight="25.0" prefWidth="135.0" promptText="Cus_ID" />
+      <JFXComboBox fx:id="comWarType" layoutX="202.0" layoutY="141.0" onAction="#ComWarTypeOnAction" prefHeight="25.0" prefWidth="135.0" promptText="War_Type" />
+      <JFXComboBox fx:id="comItemName" layoutX="376.0" layoutY="87.0" onAction="#ComItemNameOnAction" prefHeight="25.0" prefWidth="135.0" promptText="Item_Name" />
+      <TableView fx:id="tblHardware" layoutX="2.0" layoutY="222.0" prefHeight="376.0" prefWidth="998.0">
+        <columns>
+          <TableColumn fx:id="colItemID" prefWidth="87.0" text="Item_ID" />
+          <TableColumn fx:id="colCusID" prefWidth="90.0" text="Cus_ID" />
+            <TableColumn fx:id="colItemName" prefWidth="121.33334350585938" text="Item_Name" />
+            <TableColumn fx:id="colItemQty" prefWidth="136.33331298828125" text="Item_Qty" />
+            <TableColumn fx:id="colItemPrice" prefWidth="136.0" text="Item_Price" />
+            <TableColumn fx:id="colWarType" prefWidth="150.0" text="War_Type" />
+            <TableColumn fx:id="colItemDesc" prefWidth="149.0" text="Item_Desc" />
+            <TableColumn fx:id="colOption" prefWidth="131.0" text="Option" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

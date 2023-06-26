@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane fx:id="PlaceOrderContext" prefHeight="601.0" prefWidth="1015.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PlaceOrderFormController">
+   <children>
+      <Label layoutX="324.0" layoutY="8.0" prefHeight="28.0" prefWidth="244.0" text="PLACE ORDER FORM">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Separator layoutX="260.0" layoutY="47.0" prefHeight="5.0" prefWidth="371.0" />
+      <ImageView fitHeight="42.0" fitWidth="44.0" layoutX="20.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assects/menu_FILL0_wght400_GRAD0_opsz48.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="14.0" layoutY="76.0" text="ORDER_ID :">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtOrderID" layoutX="115.0" layoutY="76.0" prefHeight="12.0" prefWidth="110.0" promptText="Order_ID" />
+      <Label layoutX="285.0" layoutY="76.0" text="ORDER_DATE :">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="125.0" text="CUSTOMER DETAILS" textFill="#f20505">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmbCusID" layoutX="150.0" layoutY="158.0" prefHeight="25.0" prefWidth="110.0" promptText="Cus_ID" />
+      <JFXTextField fx:id="txtCusName" layoutX="285.0" layoutY="158.0" prefHeight="25.0" prefWidth="110.0" promptText="Cus_Name" />
+      <JFXTextField fx:id="txtCusAddress" layoutX="422.0" layoutY="157.0" prefHeight="25.0" prefWidth="107.0" promptText="Cus_Address" />
+      <JFXTextField fx:id="txtCusMobileNo" layoutX="550.0" layoutY="157.0" prefHeight="25.0" prefWidth="110.0" promptText="Cus_MobileNo" />
+      <JFXTextField fx:id="txtCusEmail" layoutX="684.0" layoutY="159.0" prefHeight="25.0" prefWidth="153.0" promptText="Cus_Email" />
+      <JFXTextField fx:id="txtCusDate" layoutX="870.0" layoutY="159.0" prefHeight="25.0" prefWidth="110.0" promptText="Cus_Date" />
+      <Label layoutX="568.0" layoutY="76.0" text="ORDER_TIME :">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="12.0" layoutY="200.0" text="ITEM DETAILS" textFill="#f20505">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmbItemCode" layoutX="150.0" layoutY="241.0" prefHeight="25.0" prefWidth="110.0" promptText="Item_Code" />
+      <JFXTextField fx:id="txtItemName" layoutX="285.0" layoutY="241.0" prefHeight="25.0" prefWidth="110.0" promptText="Item_Name" />
+      <JFXTextField fx:id="txtItemUnitPrice" layoutX="422.0" layoutY="241.0" prefHeight="25.0" prefWidth="110.0" promptText="Item_UnitPrice" />
+      <JFXTextField fx:id="txtItemQtyOnHand" layoutX="576.0" layoutY="241.0" prefHeight="25.0" prefWidth="110.0" promptText="Item_QtyOnHand" />
+      <JFXTextField fx:id="txtItemQty" layoutX="891.0" layoutY="220.0" prefHeight="25.0" prefWidth="110.0" promptText="Item_Qty" />
+      <Label layoutX="801.0" layoutY="221.0" prefHeight="21.0" prefWidth="85.0" text="ITEM_QTY :">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="87.0" fitWidth="92.0" layoutX="870.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assects/7956153.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tblPlaceOrder" layoutX="4.0" layoutY="299.0" prefHeight="247.0" prefWidth="1007.0">
+        <columns>
+          <TableColumn fx:id="colItemCode" prefWidth="134.33334350585938" text="Item_Code" />
+          <TableColumn fx:id="colItemName" prefWidth="230.33331298828125" text="Item_Name" />
+            <TableColumn fx:id="colItemUnitPrice" prefWidth="194.66668701171875" text="Unit_Price" />
+            <TableColumn fx:id="colItemQty" prefWidth="150.66665649414062" text="Qty" />
+            <TableColumn fx:id="colItemTotal" prefWidth="146.0" text="Total" />
+            <TableColumn fx:id="colOption" prefWidth="147.33334350585938" text="Option" />
+        </columns>
+      </TableView>
+      <Label layoutX="17.0" layoutY="557.0" text="TOTAL :" textFill="#f20505">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblSubTotal" layoutX="94.0" layoutY="557.0" text="0.00" textFill="#f20505">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="42.0" fitWidth="44.0" layoutX="41.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assects/1067566.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="42.0" fitWidth="44.0" layoutX="41.0" layoutY="232.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assects/1373664.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblDate" layoutX="405.0" layoutY="76.0" prefHeight="27.0" prefWidth="145.0" text="Order_Date">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <Label fx:id="lblTime" layoutX="686.0" layoutY="75.0" prefHeight="27.0" prefWidth="145.0" text="Order_Time">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <Button fx:id="btnBackToMenu" layoutX="791.0" layoutY="16.0" mnemonicParsing="false" onAction="#BackToMenuOnAction" prefHeight="39.0" prefWidth="210.0" style="-fx-background-radius: 15px;" text="ADMIN DASHBOARD" textFill="#214abc">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnPlaceOrder" layoutX="818.0" layoutY="551.0" mnemonicParsing="false" onAction="#PlaceOrderOnAction" prefHeight="39.0" prefWidth="173.0" style="-fx-background-radius: 15px;" text="PLACE ORDER" textFill="#214abc">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnAddToCart" layoutX="856.0" layoutY="255.0" mnemonicParsing="false" onAction="#AddToCartOnAction" prefHeight="39.0" prefWidth="145.0" style="-fx-background-radius: 15px; -fx-background-color: green;" text="+ADD TO CART" textFill="#f2f2f2">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane fx:id="LoginFormContext" prefHeight="473.0" prefWidth="734.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginFormController">
+   <children>
+      <AnchorPane prefHeight="475.0" prefWidth="376.0" style="-fx-background-color: #3c6382; -fx-border-color: black;">
+         <children>
+            <Label layoutX="16.0" layoutY="63.0" prefHeight="70.0" prefWidth="344.0" text="COMPUTER SHOP MANAGEMENT SYSTEM" textAlignment="CENTER" textFill="#282626" underline="true" wrapText="true">
+               <font>
+                  <Font name="Georgia Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="83.0" layoutY="6.0" prefHeight="57.0" prefWidth="211.0" text="WELCOME... TO... MY..." textAlignment="CENTER" textFill="#282626" underline="true" wrapText="true">
+               <font>
+                  <Font name="Georgia Bold" size="21.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="214.0" fitWidth="281.0" layoutX="54.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Assects/download%20(3).jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="43.0" layoutY="375.0" prefHeight="36.0" prefWidth="79.0" text="DATE :">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="43.0" layoutY="411.0" prefHeight="36.0" prefWidth="79.0" text="TIME :">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDate" layoutX="132.0" layoutY="375.0" prefHeight="36.0" prefWidth="170.0">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTime" layoutX="132.0" layoutY="410.0" prefHeight="36.0" prefWidth="151.0">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="LoadAnchorPane" layoutX="376.0" prefHeight="475.0" prefWidth="359.0">
+         <children>
+            <Button fx:id="btnAdminLogin" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#AdminLoginOnAction" prefHeight="39.0" prefWidth="156.0" style="-fx-background-radius: 15px;" text="ADMIN LOGIN" textFill="#214abc">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnUserLogin" layoutX="180.0" layoutY="14.0" mnemonicParsing="false" onAction="#UserLoginOnAction" prefHeight="39.0" prefWidth="156.0" style="-fx-background-radius: 15px;" text="USER LOGIN" textFill="#214abc">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fitHeight="379.0" fitWidth="344.0" layoutX="6.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Assects/OIP%20(6).jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

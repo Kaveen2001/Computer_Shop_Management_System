@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane fx:id="CustomerFormContext" prefHeight="601.0" prefWidth="1015.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CustomerFormController">
+   <children>
+      <Label layoutX="300.0" layoutY="5.0" text="CUSTOMER MANAGE FORM">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="42.0" fitWidth="44.0" layoutX="14.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assects/menu_FILL0_wght400_GRAD0_opsz48.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="txtID" layoutX="24.0" layoutY="67.0" onAction="#SearchCustomerIDOnAction" prefHeight="25.0" prefWidth="135.0" promptText="Customer_ID" />
+      <JFXTextField fx:id="txtName" layoutX="182.0" layoutY="67.0" prefHeight="25.0" prefWidth="135.0" promptText="Customer_Name" />
+      <JFXTextField fx:id="txtAddress" layoutX="356.0" layoutY="67.0" prefHeight="25.0" prefWidth="135.0" promptText="Customer_Address" />
+      <JFXTextField fx:id="txtMobileNo" layoutX="519.0" layoutY="67.0" prefHeight="25.0" prefWidth="135.0" promptText="Customer_MobileNo" />
+      <JFXTextField fx:id="txtEmail" layoutX="24.0" layoutY="119.0" prefHeight="25.0" prefWidth="135.0" promptText="Customer_Email" />
+      <JFXTextField fx:id="txtDate" layoutX="182.0" layoutY="119.0" prefHeight="25.0" prefWidth="135.0" promptText="Customer_Date" />
+      <Separator layoutX="283.0" layoutY="47.0" prefHeight="3.0" prefWidth="369.0" />
+      <Button fx:id="btnNewCustomer" layoutX="631.0" layoutY="163.0" mnemonicParsing="false" onAction="#NewCustomerOnAction" prefHeight="39.0" prefWidth="166.0" style="-fx-background-radius: 15px; -fx-background-color: green;" text="+NEW CUSTOMER" textFill="#f2f2f2">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnAddCustomer" layoutX="824.0" layoutY="163.0" mnemonicParsing="false" onAction="#AddCustomerOnAction" prefHeight="39.0" prefWidth="166.0" style="-fx-background-radius: 15px; -fx-background-color: blue;" text="ADD CUSTOMER" textFill="#f2f2f2">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="92.0" fitWidth="107.0" layoutX="861.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assects/1067566.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnBackToMenu" layoutX="812.0" layoutY="14.0" mnemonicParsing="false" onAction="#BackToMenuOnAction" prefHeight="39.0" prefWidth="189.0" style="-fx-background-radius: 15px;" text="USER DASHBOARD" textFill="#214abc">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TableView fx:id="tblCustomer" layoutX="5.0" layoutY="208.0" prefHeight="390.0" prefWidth="1006.0">
+        <columns>
+          <TableColumn fx:id="colCusID" prefWidth="75.0" text="Cus_ID" />
+          <TableColumn fx:id="colCusName" prefWidth="123.66665649414062" text="Cus_Name" />
+            <TableColumn fx:id="colCusAddress" prefWidth="178.33334350585938" text="Cus_Address" />
+            <TableColumn fx:id="colCusMobileNo" prefWidth="143.66668701171875" text="Cus_MobileNo" />
+            <TableColumn fx:id="colCusEmail" prefWidth="190.00003051757812" text="Cus_Email" />
+            <TableColumn fx:id="colCusDate" prefWidth="163.33331298828125" text="Cus_Date" />
+            <TableColumn fx:id="colOption" prefWidth="132.33331298828125" text="Option" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnCustomerReport" layoutX="436.0" layoutY="163.0" mnemonicParsing="false" onAction="#CustomerReportOnAction" prefHeight="39.0" prefWidth="166.0" style="-fx-background-radius: 15px; -fx-background-color: #353b48;" text="CUSTOMER REPORT" textFill="#f2f2f2">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

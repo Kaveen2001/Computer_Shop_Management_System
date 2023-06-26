@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane fx:id="ItemDetailsContext" prefHeight="601.0" prefWidth="1015.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ItemDetailsFormController">
+   <children>
+      <Button fx:id="btnBackToMenu" layoutX="801.0" layoutY="27.0" mnemonicParsing="false" onAction="#BackToMenuOnAction" prefHeight="39.0" prefWidth="210.0" style="-fx-background-radius: 15px;" text="ADMIN DASHBOARD" textFill="#214abc">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="311.0" layoutY="28.0" prefHeight="36.0" prefWidth="277.0" text="ITEM DETAILS FORM">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Separator layoutX="280.0" layoutY="67.0" prefHeight="5.0" prefWidth="371.0" />
+      <ImageView fitHeight="42.0" fitWidth="44.0" layoutX="40.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assects/menu_FILL0_wght400_GRAD0_opsz48.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="92.0" fitWidth="107.0" layoutX="875.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assects/7956153.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tblItemDetails" layoutX="4.0" layoutY="170.0" prefHeight="428.0" prefWidth="1009.0">
+         <columns>
+            <TableColumn fx:id="colItemCode" prefWidth="219.33334350585938" text="Item_Code" />
+            <TableColumn fx:id="colItemUnitPrice" prefWidth="371.6666564941406" text="Unit_Price" />
+            <TableColumn fx:id="colItemQty" prefWidth="225.66668701171875" text="Qty" />
+            <TableColumn fx:id="colTotal" prefWidth="199.0" text="Total" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

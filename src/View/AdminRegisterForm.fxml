@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane fx:id="AdminRegisterContext" prefHeight="405.0" prefWidth="432.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AdminRegisterFormController">
+   <children>
+      <Label layoutX="61.0" text="ADMIN REGISTER FORM">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <Separator layoutX="39.0" layoutY="39.0" prefHeight="3.0" prefWidth="367.0" />
+      <JFXTextField fx:id="txtAdminID" layoutX="69.0" layoutY="60.0" prefHeight="25.0" prefWidth="281.0" promptText="Admin_ID" />
+      <JFXTextField fx:id="txtAdminName" layoutX="69.0" layoutY="106.0" prefHeight="25.0" prefWidth="281.0" promptText="Admin_Name" />
+      <JFXTextField fx:id="txtAdminAddress" layoutX="69.0" layoutY="163.0" prefHeight="25.0" prefWidth="281.0" promptText="Admin_Address" />
+      <JFXTextField fx:id="txtAdminMobileNo" layoutX="69.0" layoutY="215.0" prefHeight="25.0" prefWidth="281.0" promptText="Admin_MobileNo" />
+      <JFXTextField fx:id="txtAdminEmail" layoutX="69.0" layoutY="272.0" prefHeight="25.0" prefWidth="281.0" promptText="Admin_Email" />
+      <Button fx:id="btnAdminRegister" layoutX="259.0" layoutY="324.0" mnemonicParsing="false" onAction="#AdminRegisterOnAction" prefHeight="39.0" prefWidth="124.0" style="-fx-background-radius: 15px;" text="REGISTER" textFill="#214abc">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnAdminLogin" layoutX="79.0" layoutY="324.0" mnemonicParsing="false" onAction="#AdminLoginOnAction" prefHeight="39.0" prefWidth="131.0" style="-fx-background-radius: 15px;" text="LOGIN" textFill="#214abc">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

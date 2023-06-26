@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane fx:id="RepairManageContext" prefHeight="601.0" prefWidth="1004.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.RepairManageFormController">
+   <children>
+      <Label layoutX="299.0" layoutY="14.0" text="REPAIR  MANAGE FORM">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Separator layoutX="270.0" layoutY="48.0" prefHeight="5.0" prefWidth="371.0" />
+      <ImageView fitHeight="42.0" fitWidth="44.0" layoutX="23.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assects/menu_FILL0_wght400_GRAD0_opsz48.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="txtID" layoutX="44.0" layoutY="87.0" onAction="#SearchJobIDOnAction" prefHeight="25.0" prefWidth="135.0" promptText="Job_ID" />
+      <JFXTextField fx:id="txtRepairItemName" layoutX="202.0" layoutY="87.0" prefHeight="25.0" prefWidth="135.0" promptText="RepairItem_Name" />
+      <JFXTextField fx:id="txtRepairState" layoutX="376.0" layoutY="87.0" prefHeight="25.0" prefWidth="135.0" promptText="Repair_State" />
+      <JFXTextField fx:id="txtRecivedDate" layoutX="539.0" layoutY="87.0" prefHeight="25.0" prefWidth="135.0" promptText="Recived_Date" />
+      <JFXTextField fx:id="txtReturnDate" layoutX="44.0" layoutY="139.0" prefHeight="25.0" prefWidth="135.0" promptText="Return_Date" />
+      <JFXTextField fx:id="txtRepairDesc" layoutX="202.0" layoutY="139.0" prefHeight="25.0" prefWidth="135.0" promptText="Repair_Desc" />
+      <Button fx:id="btnNewRepair" layoutX="655.0" layoutY="175.0" mnemonicParsing="false" onAction="#NewRepairOnAction" prefHeight="39.0" prefWidth="166.0" style="-fx-background-radius: 15px; -fx-background-color: green;" text="+NEW REPAIR" textFill="#f2f2f2">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnAddRepair" layoutX="832.0" layoutY="175.0" mnemonicParsing="false" onAction="#AddRepairOnAction" prefHeight="39.0" prefWidth="166.0" style="-fx-background-radius: 15px; -fx-background-color: blue;" text="ADD REPAIR" textFill="#f2f2f2">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnBackToMenu" layoutX="788.0" layoutY="13.0" mnemonicParsing="false" onAction="#BackToMenuOnAction" prefHeight="39.0" prefWidth="210.0" style="-fx-background-radius: 15px;" text="USER DASHBOARD" textFill="#214abc">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="92.0" fitWidth="107.0" layoutX="869.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assects/4768799.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="txtRepairItemPrice" layoutX="376.0" layoutY="139.0" prefHeight="25.0" prefWidth="135.0" promptText="RepairItem_Price" />
+      <TableView fx:id="tblRepairManage" layoutY="222.0" prefHeight="386.0" prefWidth="1016.0">
+         <columns>
+            <TableColumn fx:id="colJobID" prefWidth="91.0" text="Job_ID" />
+            <TableColumn fx:id="colRepairItemName" prefWidth="121.0" text="RepairItem_Name" />
+            <TableColumn fx:id="colRepairState" prefWidth="135.33331298828125" text="Repair_State" />
+            <TableColumn fx:id="colRecivedDate" prefWidth="155.66668701171875" text="Recived_Date" />
+            <TableColumn fx:id="colReturnDate" prefWidth="129.33331298828125" text="Return_Date" />
+            <TableColumn fx:id="colRepairDesc" prefWidth="126.66668701171875" text="Repair_Desc" />
+            <TableColumn fx:id="colRepairItemPrice" prefWidth="131.0" text="RepairItem_Price" />
+            <TableColumn fx:id="colOption" prefWidth="124.0" text="Option" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

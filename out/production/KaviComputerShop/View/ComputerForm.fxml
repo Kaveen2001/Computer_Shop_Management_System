@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane fx:id="ComputerFormContext" prefHeight="601.0" prefWidth="1004.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ComputerFormController">
+   <children>
+      <Label layoutX="290.0" layoutY="14.0" text="COMPUTER MANAGE FORM">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Separator layoutX="275.0" layoutY="50.0" prefHeight="5.0" prefWidth="371.0" />
+      <ImageView fitHeight="42.0" fitWidth="44.0" layoutX="13.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assects/menu_FILL0_wght400_GRAD0_opsz48.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="txtID" layoutX="34.0" layoutY="77.0" prefHeight="25.0" prefWidth="135.0" promptText="Computer_ID" />
+      <JFXTextField fx:id="txtComSerialNo" layoutX="192.0" layoutY="77.0" prefHeight="25.0" prefWidth="135.0" promptText="Computer_SerialNo" />
+      <JFXTextField fx:id="txtComBrand" layoutX="366.0" layoutY="77.0" prefHeight="25.0" prefWidth="135.0" promptText="Computer_Brand" />
+      <JFXTextField fx:id="txtComType" layoutX="529.0" layoutY="77.0" prefHeight="25.0" prefWidth="135.0" promptText="Computer_Type" />
+      <JFXTextField fx:id="txtWarType" layoutX="34.0" layoutY="129.0" prefHeight="25.0" prefWidth="135.0" promptText="Warranty_Type" />
+      <JFXTextField fx:id="txtComPrice" layoutX="192.0" layoutY="129.0" prefHeight="25.0" prefWidth="135.0" promptText="Computer_Price" />
+      <Button fx:id="btnNewComputer" layoutX="630.0" layoutY="165.0" mnemonicParsing="false" onAction="#NewComputerOnAction" prefHeight="39.0" prefWidth="166.0" style="-fx-background-radius: 15px; -fx-background-color: green;" text="+NEW COMPUTER" textFill="#f2f2f2">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnAddComputer" layoutX="822.0" layoutY="165.0" mnemonicParsing="false" onAction="#AddComputerOnAction" prefHeight="39.0" prefWidth="166.0" style="-fx-background-radius: 15px; -fx-background-color: blue;" text="ADD COMPUTER" textFill="#f2f2f2">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="92.0" fitWidth="107.0" layoutX="859.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assects/OIP%20(6).jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnBackToMenu" layoutX="778.0" layoutY="13.0" mnemonicParsing="false" onAction="#BackToMenuOnAction" prefHeight="39.0" prefWidth="210.0" style="-fx-background-radius: 15px;" text="ADMIN DASHBOARD" textFill="#214abc">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TableView fx:id="tblComputer" layoutX="4.0" layoutY="217.0" prefHeight="382.0" prefWidth="996.0">
+        <columns>
+          <TableColumn fx:id="colComID" prefWidth="75.0" text="Com_ID" />
+          <TableColumn fx:id="colComSerialNo" prefWidth="114.33334350585938" text="Com_SerialNo" />
+            <TableColumn fx:id="colComBrand" prefWidth="151.66665649414062" text="Com_Brand" />
+            <TableColumn fx:id="colComType" prefWidth="181.66668701171875" text="Com_Type" />
+            <TableColumn fx:id="colWarType" prefWidth="163.66665649414062" text="War_Type" />
+            <TableColumn fx:id="colComPrice" prefWidth="161.0" text="Com_Price" />
+            <TableColumn fx:id="colOption" prefWidth="149.0" text="Option" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

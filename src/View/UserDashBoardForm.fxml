@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane fx:id="UserDashBoardContext" prefHeight="629.0" prefWidth="1203.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.UserDashBoardFormController">
+   <children>
+      <AnchorPane prefHeight="73.0" prefWidth="1301.0" style="-fx-background-color: #3c6382; -fx-border-color: black;">
+         <children>
+            <Label layoutX="498.0" layoutY="8.0" prefHeight="58.0" prefWidth="378.0" text="USER DASHBOARD">
+               <font>
+                  <Font name="System Bold" size="40.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="58.0" fitWidth="58.0" layoutX="262.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Assects/hp-300x300-1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="58.0" fitWidth="58.0" layoutX="159.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Assects/Asus-Logoo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="58.0" fitWidth="58.0" layoutX="52.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Assects/LENOVO-LOGO.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="58.0" fitWidth="58.0" layoutX="375.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Assects/Dell-600x600.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="58.0" fitWidth="58.0" layoutX="924.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Assects/Dell-600x600.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="58.0" fitWidth="58.0" layoutX="1017.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Assects/hp-300x300-1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="58.0" fitWidth="58.0" layoutX="1100.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Assects/Asus-Logoo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="58.0" fitWidth="58.0" layoutX="1200.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Assects/LENOVO-LOGO.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="73.0" prefHeight="601.0" prefWidth="286.0" style="-fx-background-color: #3c6382; -fx-border-color: black;">
+         <children>
+            <JFXButton fx:id="btnCustomerManage" layoutX="60.0" layoutY="156.0" onAction="#CustomerManageOnAction" prefHeight="39.0" prefWidth="220.0" style="-fx-background-color: #38ada9; -fx-background-radius: 15px;" text="CUSTOMER MANAGE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Label layoutX="1.0" layoutY="59.0" prefHeight="65.0" prefWidth="275.0" text="COMPUTER SHOP MANAGEMENT SYSTEM" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="58.0" fitWidth="58.0" layoutX="102.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Assects/my-computer--v3.png" />
+               </image>
+            </ImageView>
+            <Separator layoutX="-18.0" layoutY="120.0" prefHeight="8.0" prefWidth="294.0" />
+            <ImageView fitHeight="42.0" fitWidth="44.0" layoutX="14.0" layoutY="154.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Assects/1067566.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="btnRepairManage" layoutX="65.0" layoutY="226.0" onAction="#RepairManageOnAction" prefHeight="36.0" prefWidth="213.0" style="-fx-background-color: #f6b93b; -fx-background-radius: 15px;" text="REPAIR MANAGE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnWarrentyManage" layoutX="60.0" layoutY="281.0" onAction="#WarrentyManageOnAction" prefHeight="39.0" prefWidth="220.0" style="-fx-background-color: #e55039; -fx-background-radius: 15px;" text="WARRENTY MANAGE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnPlaceOrderForm" layoutX="60.0" layoutY="341.0" onAction="#PlaceOrderFormOnAction" prefHeight="39.0" prefWidth="220.0" style="-fx-background-color: #78e08f; -fx-background-radius: 15px;" text="PLACE ORDER FROM">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <ImageView fitHeight="42.0" fitWidth="44.0" layoutX="14.0" layoutY="221.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Assects/4768799.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="42.0" fitWidth="44.0" layoutX="14.0" layoutY="280.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Assects/warranty.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="42.0" fitWidth="44.0" layoutX="14.0" layoutY="340.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Assects/3321752.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="7.0" layoutY="453.0" prefHeight="36.0" prefWidth="79.0" text="DATE :">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDate" layoutX="93.0" layoutY="453.0" prefHeight="36.0" prefWidth="170.0">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="7.0" layoutY="503.0" prefHeight="36.0" prefWidth="79.0" text="TIME :">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTime" layoutX="99.0" layoutY="503.0" prefHeight="36.0" prefWidth="151.0">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnUserLogOut" layoutX="7.0" layoutY="549.0" mnemonicParsing="false" onAction="#UserLogOutOnAction" prefHeight="37.0" prefWidth="275.0" style="-fx-background-radius: 15px;" text="LOG OUT" textFill="#214abc">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <JFXButton fx:id="btnOrderDetails" layoutX="60.0" layoutY="404.0" onAction="#OrderDetailsFormOnAction" prefHeight="39.0" prefWidth="220.0" style="-fx-background-color: #fab1a0; -fx-background-radius: 15px;" text="ORDER DETAILS FORM">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <ImageView fitHeight="42.0" fitWidth="44.0" layoutX="14.0" layoutY="404.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Assects/2942308.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="LoadAnchorPaneContext" layoutX="286.0" layoutY="73.0" prefHeight="601.0" prefWidth="1015.0">
+         <children>
+            <ImageView fitHeight="601.0" fitWidth="853.0" layoutX="106.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Assects/301549369_658388905622567_9185982619020647487_n.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

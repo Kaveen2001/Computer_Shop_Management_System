@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane fx:id="HomePageContext" prefHeight="476.0" prefWidth="679.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.HomePageFormController">
+   <children>
+      <ImageView fitHeight="483.0" fitWidth="679.0" nodeOrientation="RIGHT_TO_LEFT" opacity="0.8" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assects/download%20(1).jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="19.0" layoutY="14.0" prefHeight="53.0" prefWidth="641.0" text="COMPUTER SHOP MANAGEMENT SYSTEM" textAlignment="CENTER" textFill="#de0000" underline="true">
+         <font>
+            <Font name="Georgia Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" layoutX="244.0" layoutY="81.0" prefHeight="39.0" prefWidth="173.0">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font></Label>
+      <Label fx:id="lblTime" layoutX="244.0" layoutY="120.0" prefHeight="39.0" prefWidth="173.0">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font></Label>
+      <ProgressBar fx:id="progressbar" layoutX="13.0" layoutY="433.0" prefHeight="18.0" prefWidth="648.0" progress="0.0" />
+      <Label fx:id="txtLoarding" layoutX="216.0" layoutY="380.0" prefHeight="45.0" prefWidth="200.0" text="LOARDING....." textFill="#fffefe">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
